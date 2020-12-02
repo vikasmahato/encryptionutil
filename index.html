@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="ext/style.css" />
+    <script src="ext/blowfish.js"></script>
+    <title>blowfish.js encrypt/decrypt online</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>blowfish.js encrypt/decrypt online</h1>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="p">
+        <label class="label" for="data">Data to encrypt or decrypt</label>
+        <textarea class="textarea" id="data"></textarea>
+      </div>
+      <div class="p">
+        <label class="label" for="key">Key</label>
+        <input class="input" id="key" type="text" value="" />
+      </div>
+      <div class="p">
+        <label class="label" for="ciphermode">Cipher mode</label>
+        <select class="select" id="ciphermode">
+          <option value="0" selected="selected">ECB</option>
+        </select>
+        <span class="sub">Enumeration for various cipher modes.</span>
+      </div>
+      <div class="p">
+        <label class="label" for="outputtype">Output type</label>
+        <select class="select" id="outputtype">
+          <option value="1" selected="selected">Hex</option>          
+        </select>
+        <span class="sub">Enumeration for input and output encodings.</span>
+      </div>
+      
+      <div class="line"></div>
+      <div class="buttons">
+        <button class="button" id="encrypt">Encrypt</button>
+        <button class="button" id="decrypt">Decrypt</button>
+      </div>
+      <div class="line"></div>
+      <div class="p">
+        <label class="label" for="result">Result</label>
+        <textarea class="textarea" id="result"></textarea>
+      </div>
+      <div class="p">
+        <label class="label" for="jscode">JS code</label>
+        <textarea class="textarea" id="jscode"></textarea>
+      </div>
+     
+    </div>
+    <script src="ext/script.js"></script>
+  </body>
+</html>
